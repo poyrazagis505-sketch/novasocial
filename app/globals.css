@@ -1,0 +1,313 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  color: #101010;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 18px;
+  position: sticky;
+  top: 12px;
+  z-index: 3;
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.brand-mark {
+  width: 35px;
+  height: 35px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  font-size: 1.3rem;
+}
+
+.story-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 18px 4px 14px;
+  margin-top: 18px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 72px;
+}
+
+.story small {
+  font-size: 0.72rem;
+  color: #4d4d4d;
+}
+
+.story-counter {
+  margin-left: auto;
+  background: #f2f2f2;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  color: #2d2d2d;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.avatar.large {
+  width: 62px;
+  height: 62px;
+}
+
+.avatar.small {
+  width: 38px;
+  height: 38px;
+}
+
+.avatar-ring {
+  padding: 2px;
+  border: 3px solid #d71f73;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.avatar-gradient {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 0.8fr);
+  gap: 26px;
+  margin-top: 8px;
+}
+
+.feed-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.composer,
+.post-card,
+.profile-card,
+.suggestions,
+.status-box {
+  background: white;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.composer {
+  padding: 16px;
+}
+
+.composer-header,
+.user-mini,
+.section-title-row,
+.post-header,
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.composer-header {
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.composer textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  border: 1px solid #ececec;
+  background: #fbfbfb;
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.composer-actions {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #595959;
+}
+
+.primary-btn,
+.follow-btn {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f58529, #dd2a7b);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 10px 16px;
+}
+
+.post-card {
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 14px 16px;
+}
+
+.user-mini {
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.user-mini div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.time {
+  color: #797979;
+  font-size: 0.78rem;
+}
+
+.post-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.post-actions {
+  padding: 12px 16px 0;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.post-actions button {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #2a2a2a;
+}
+
+.post-caption {
+  padding: 12px 16px 16px;
+  line-height: 1.5;
+}
+
+.profile-card,
+.suggestions,
+.status-box {
+  padding: 16px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.profile-card p {
+  margin: 0;
+  color: #575757;
+  line-height: 1.5;
+}
+
+.section-title-row {
+  margin-bottom: 12px;
+}
+
+.section-title-row span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.follow-btn {
+  padding: 8px 10px;
+}
+
+.status-box {
+  color: #2e2e2e;
+}
+
+.status-box p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+  color: #5d5d5d;
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
